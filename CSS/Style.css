@@ -325,6 +325,7 @@
 
             picture {
                 display: flex;
+                position: relative;
             }
 
             picture img {
@@ -341,4 +342,30 @@
 
             .item h2 {
                 margin: 0 0 1.5rem 0;
+            }
+
+            picture::after,
+            picture::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+                z-index: -1;
+
+            }
+
+            picture::before {
+                background-color: #fb76021e;
+                height: 60%;
+                width: 45%;
+            }
+
+            picture::after {
+                background-color: #fb760219;
+                height: 80%;
+                width: 60%;
+                z-index: -2;
+
             }
