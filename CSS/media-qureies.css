@@ -22,6 +22,7 @@
     }
 
     @media only screen and (max-width:59.375em) {
+
         main {
             height: auto;
         }
@@ -71,5 +72,42 @@
 
         .t-dash {
             display: block;
+        }
+
+        .logos {
+            justify-content: space-evenly;
+        }
+
+        .logos img {
+            height: 1.125rem;
+            filter: brightness(0);
+            opacity: .5;
+        }
+
+        .howItWorks header p {
+
+            font-size: 1.875rem;
+        }
+
+    }
+
+    @media only screen and (max-width:37.5em) {
+
+        .logos img {
+            max-height: .75rem;
+        }
+
+        .item {
+            grid-template-columns: 1fr;
+        }
+
+        .mid-pic {
+            grid-row: 4;
+        }
+
+        .howItWorks header p {
+
+
+            font-size: 1.5rem;
         }
     }

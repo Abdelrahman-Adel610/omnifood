@@ -40,11 +40,18 @@
                 color: var(--fnt-clr);
             }
 
+            .container {
+                max-width: 75rem;
+                margin-inline: auto;
+
+            }
+
             main {
                 background-color: var(--sec-clr);
                 display: flex;
                 align-items: center;
             }
+
 
             /******* navbar Section classes *******/
 
@@ -145,7 +152,7 @@
             .heroSec {
                 margin: 5rem 0 2rem 0;
                 display: flex;
-                max-width: 75rem;
+                /* max-width: 75rem;*/
                 margin-inline: auto;
                 /* background-color: #000; */
                 /* align-items: center; */
@@ -247,7 +254,7 @@
             /*********featured in Section*********/
 
             .features-header {
-                text-transform: capitalize;
+                text-transform: uppercase;
                 text-align: center;
                 font-size: .875rem;
                 color: var(--fnt-clr);
@@ -272,4 +279,66 @@
                 max-width: 59.375rem;
                 margin-inline: auto;
                 margin-bottom: 4rem;
+            }
+
+            /*********How it works Section*********/
+            .howItWorks {
+                padding: 3rem;
+            }
+
+            .howItWorks header h2 {
+                text-transform: uppercase;
+                font-size: 1rem;
+                color: var(--main-Clr);
+                font-weight: 600;
+                margin: 2rem 0 1rem 0;
+            }
+
+            .howItWorks header p {
+
+                color: var(--fnt-clr-headers);
+                font-weight: 700;
+                font-size: 2.75rem;
+            }
+
+            .items {
+                margin-block: 6rem;
+            }
+
+            .item {
+                display: grid;
+                gap: 2rem 4rem;
+                /* gap: 0px 64px; */
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                /* grid-auto-rows: auto; */
+            }
+
+            .num-header {
+                display: block;
+                font-size: 5.375rem;
+                font-weight: 700;
+                color: var(--fnt-clr);
+                opacity: .4;
+                /* align-self: end; */
+            }
+
+            picture {
+                display: flex;
+            }
+
+            picture img {
+                width: 35%;
+                height: auto;
+                margin-inline: auto;
+
+            }
+
+            .item p {
+                /* grid-row: 3/4; */
+                line-height: 1.9;
+            }
+
+            .item h2 {
+                margin: 0 0 1.5rem 0;
             }
