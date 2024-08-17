@@ -20,6 +20,11 @@
                 transition: all 0.3s;
             }
 
+            a:active,
+            a:visited {
+                border: 10px #cf711f79 solid !important;
+            }
+
             button {
                 display: inline-block;
                 padding: .75rem 1.5rem;
@@ -35,9 +40,14 @@
                 overflow: clip;
             }
 
+            ul {
+                list-style: none;
+            }
+
             body {
                 font-family: "Rubik", sans-serif;
                 color: var(--fnt-clr);
+                height: 10000px;
             }
 
             .container {
@@ -149,7 +159,7 @@
 
             /******* Hero Section classes *******/
 
-            .heroSec {
+            #heroSec {
                 margin: 5rem 0 2rem 0;
                 display: flex;
                 /* max-width: 75rem;*/
@@ -173,7 +183,7 @@
                 padding: 2rem;
             }
 
-            .heroSec h1 {
+            #heroSec h1 {
                 font-size: 3rem;
                 /* padding: 4rem 0.75rem 0 0; */
                 color: var(--fnt-clr-headers);
@@ -182,7 +192,7 @@
                 letter-spacing: -0.125rem;
             }
 
-            .heroSec p {
+            #heroSec p {
                 font-size: 1.125rem;
                 line-height: 1.7;
             }
@@ -282,11 +292,11 @@
             }
 
             /*********How it works Section*********/
-            .howItWorks {
+            #howItWorks {
                 padding: 3rem;
             }
 
-            .howItWorks header h2 {
+            #howItWorks header h2 {
                 text-transform: uppercase;
                 font-size: 1rem;
                 color: var(--main-Clr);
@@ -294,7 +304,7 @@
                 margin: 2rem 0 1rem 0;
             }
 
-            .howItWorks header p {
+            #howItWorks header p {
 
                 color: var(--fnt-clr-headers);
                 font-weight: 700;
@@ -302,7 +312,7 @@
             }
 
             .items {
-                margin-block: 6rem;
+                margin-block: 6rem 0rem;
             }
 
             .item {
@@ -323,12 +333,12 @@
                 /* align-self: end; */
             }
 
-            picture {
+            #howItWorks picture {
                 display: flex;
                 position: relative;
             }
 
-            picture img {
+            #howItWorks picture img {
                 width: 35%;
                 height: auto;
                 margin-inline: auto;
@@ -344,8 +354,8 @@
                 margin: 0 0 1.5rem 0;
             }
 
-            picture::after,
-            picture::before {
+            #howItWorks picture::after,
+            #howItWorks picture::before {
                 content: "";
                 position: absolute;
                 top: 50%;
@@ -356,16 +366,142 @@
 
             }
 
-            picture::before {
+            #howItWorks picture::before {
                 background-color: #fb76021e;
                 height: 60%;
                 width: 45%;
             }
 
-            picture::after {
+            #howItWorks picture::after {
                 background-color: #fb760219;
                 height: 80%;
                 width: 60%;
                 z-index: -2;
 
+            }
+
+            /* Meals Section */
+            #Meals {
+                padding: 3rem;
+                text-align: center;
+            }
+
+            #Meals header {
+                text-align: center;
+            }
+
+            #Meals header h2 {
+                text-transform: uppercase;
+                font-size: 1rem;
+                color: var(--main-Clr);
+                font-weight: 600;
+                margin: 2rem 0 1rem 0;
+            }
+
+            #Meals header p {
+
+                color: var(--fnt-clr-headers);
+                font-weight: 700;
+                font-size: 2.75rem;
+                margin-bottom: 6rem;
+            }
+
+            .meals {
+                display: flex;
+                /* gap: 32px; */
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            .meal-card {
+                width: 20.625rem;
+                box-shadow: 0 0 .625rem .625rem #00000008;
+                border-radius: .625rem;
+                transition: all 0.5s;
+            }
+
+            .meal-card img {
+                border-radius: .625rem;
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+
+            .label {
+                font-size: .75rem;
+                padding: .125rem .5rem;
+                border-radius: .625rem;
+                font-weight: 700;
+            }
+
+
+            .g-label {
+                background-color: #51cf66;
+            }
+
+            .y-label {
+                background-color: #ffd43b;
+            }
+
+            .card-body {
+                padding: 1.125rem 3rem;
+
+            }
+
+            .card-body ul {
+                font-size: 1.125rem;
+            }
+
+            ul li {
+                display: flex;
+                align-items: center;
+                gap: 1.25rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .card-body h3 {
+                font-size: 1.5rem;
+                margin-block: .75rem 2rem;
+            }
+
+            ion-icon {
+                color: var(--main-Clr);
+                font-size: 1.5rem;
+            }
+
+            span.card {
+                font-weight: 500;
+                color: var(--fnt-clr);
+            }
+
+            .meal-card:hover {
+                transform: translate(0, -0.9375rem);
+            }
+
+            .worksWith p {
+
+                color: var(--fnt-clr-headers);
+                font-weight: 700;
+                font-size: 1.875rem;
+                margin-bottom: 2rem;
+            }
+
+
+            .worksWith ul {
+                font-size: 1.125rem;
+                display: flex;
+                flex-flow: column wrap;
+                gap: 1rem;
+            }
+
+            a.all-recps {
+                color: var(--main-Clr);
+                font-size: 18px;
+                padding-bottom: 2px;
+                border-bottom: 1px solid var(--main-Clr);
+                transition: all 0.2s;
+                margin-block: 48px 98px;
+            }
+
+            a.all-recps:hover {
+                border-bottom-width: 0px;
             }

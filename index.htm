@@ -27,12 +27,12 @@
 <body>
     <nav class="">
         <div class="logo">
-            <img src="Images/omnifood-logo.png" alt="logo">
+            <a href="#heroSec"> <img src="Images/omnifood-logo.png" alt="logo"></a>
         </div>
         <div class="links">
             <button class="x-but"><i class="fa-solid fa-close"></i></button>
-            <a href="#">How it works</a>
-            <a href="#">Meals</a>
+            <a href="#howItWorks">How it works</a>
+            <a href="#Meals">Meals</a>
             <a href="#">Testimonials</a>
             <a href="#">Pricing</a>
             <button class="try-but">
@@ -44,7 +44,7 @@
         </button>
     </nav>
     <main>
-        <div class=" container heroSec ">
+        <div class=" container" id="heroSec">
             <div class="hero-txt">
                 <h1>
                     A healthy meal delivered to your door, every single day
@@ -77,76 +77,144 @@
             </div>
         </div>
     </main>
-</body>
-<section>
-    <h2 class="features-header">AS FEATURED IN
-    </h2>
-    <div class="logos">
-        <img src="Images/techcrunch.png" alt="techcrunch">
-        <img src="Images/business-insider.png" alt="business-insider">
-        <img src="Images/the-new-york-times.png" alt="the-new-york-times">
-        <img src="Images/forbes.png" alt="forbes">
-        <img src=" Images/usa-today.png " alt="usa-today ">
-    </div>
-</section>
-<section class="howItWorks container">
-    <header>
-        <h2>how it works</h2>
-        <p>
-            Your daily dose of health in 3 simple steps
-        </p>
-    </header>
-    <div class="items">
-        <div class="item">
-            <!-- first row -->
-            <div class="info">
-                <span class="num-header">
-                    01
-                </span>
-                <h2>
-                    Tell us what you like (and what not)
-                </h2>
-                <p>Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized weekly
-                    meal
-                    plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter what
-                    diet
-                    you
-                    follow!</p>
-            </div>
-            <picture>
-                <img src="Images/app-screen-1.png" alt="app-screen-1">
-            </picture>
-            <!-- second row -->
-            <picture class="mid-pic">
-                <img src="Images/app-screen-2.png" alt="app-screen-1">
-            </picture>
-            <div class="info">
-                <span class="num-header">
-                    02
-                </span>
-                <h2>
-                    Approve your weekly meal plan
-                </h2>
-                <p>Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients,
-                    swap entire meals, or even add your own recipes.</p>
-            </div>
-            <!-- third row -->
-            <div class="info">
-                <span class="num-header">
-                    03
-                </span>
-                <h2>
-                    Receive meals at convenient time
-                </h2>
-                <p>Best chefs in town will cook your selected meal every day, and we will deliver it to your door
-                    whenever works best for you. You can change delivery schedule and address daily!</p>
-            </div>
-            <picture>
-                <img src="Images/app-screen-3.png" alt="app-screen-1">
-            </picture>
-        </div>
 
-    </div>
-</section>
+    <section>
+        <h2 class="features-header">AS FEATURED IN
+        </h2>
+        <div class="logos">
+            <img src="Images/techcrunch.png" alt="techcrunch">
+            <img src="Images/business-insider.png" alt="business-insider">
+            <img src="Images/the-new-york-times.png" alt="the-new-york-times">
+            <img src="Images/forbes.png" alt="forbes">
+            <img src=" Images/usa-today.png " alt="usa-today ">
+        </div>
+    </section>
+    <section class="container" id="howItWorks">
+        <header>
+            <h2>how it works</h2>
+            <p>
+                Your daily dose of health in 3 simple steps
+            </p>
+        </header>
+        <div class="items">
+            <div class="item">
+                <!-- first row -->
+                <div class="info">
+                    <span class="num-header">
+                        01
+                    </span>
+                    <h2>
+                        Tell us what you like (and what not)
+                    </h2>
+                    <p>Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized
+                        weekly
+                        meal
+                        plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter what
+                        diet
+                        you
+                        follow!</p>
+                </div>
+                <picture>
+                    <img src="Images/app-screen-1.png" alt="app-screen-1">
+                </picture>
+                <!-- second row -->
+                <picture class="mid-pic">
+                    <img src="Images/app-screen-2.png" alt="app-screen-1">
+                </picture>
+                <div class="info">
+                    <span class="num-header">
+                        02
+                    </span>
+                    <h2>
+                        Approve your weekly meal plan
+                    </h2>
+                    <p>Once per week, approve the meal plan generated for you by Omnifood AI. You can change
+                        ingredients,
+                        swap entire meals, or even add your own recipes.</p>
+                </div>
+                <!-- third row -->
+                <div class="info">
+                    <span class="num-header">
+                        03
+                    </span>
+                    <h2>
+                        Receive meals at convenient time
+                    </h2>
+                    <p>Best chefs in town will cook your selected meal every day, and we will deliver it to your door
+                        whenever works best for you. You can change delivery schedule and address daily!</p>
+                </div>
+                <picture>
+                    <img src="Images/app-screen-3.png" alt="app-screen-1">
+                </picture>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <div class="container" id="Meals">
+            <header>
+                <h2>meals</h2>
+                <p>
+                    Omnifood AI chooses from 5,000+ recipes
+                </p>
+            </header>
+            <div class="meals">
+                <div class="meal-card">
+                    <picture>
+                        <img src="Images/meal-1.jpg" alt="meal 1">
+                    </picture>
+                    <div class="card-body">
+                        <span class="label g-label">VEGETARIAN</span>
+                        <h3>Japanese Gyozas</h3>
+                        <ul>
+                            <li><ion-icon name="flame-outline"></ion-icon> <span><span class="card">650
+                                    </span>calories</span></li>
+                            <li><ion-icon name="restaurant-outline"></ion-icon><span>NutriScore ® <span class="card">
+                                        74</span></span></li>
+                            <li><ion-icon name="star-outline"></ion-icon><span> <span class="card"> 4.9</span> rating
+                                    (537)</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="meal-card">
+                    <picture>
+                        <img src="Images/meal-2.jpg" alt="meal 1">
+                    </picture>
+                    <div class="card-body">
+                        <span class="label g-label">VEGETARIAN</span>
+                        <span class="label y-label">PALEO</span>
+                        <h3>Avocado Salad</h3>
+                        <ul>
+                            <li><ion-icon name="flame-outline"></ion-icon> <span><span class="card">400
+                                    </span>calories</span></li>
+                            <li><ion-icon name="restaurant-outline"></ion-icon><span>NutriScore ® <span class="card">
+                                        92</span></span></li>
+                            <li><ion-icon name="star-outline"></ion-icon><span> <span class="card"> 4.8</span> rating
+                                    (441)</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="worksWith">
+                    <p>Works with any diet:</p>
+                    <ul>
+                        <li> <ion-icon name="checkmark-outline"></ion-icon> Vegetarian</li>
+                        <li> <ion-icon name="checkmark-outline"></ion-icon> Gluten-free</li>
+                        <li> <ion-icon name="checkmark-outline"></ion-icon> Lactose-free</li>
+                        <li> <ion-icon name="checkmark-outline"></ion-icon> Keto</li>
+                        <li> <ion-icon name="checkmark-outline"></ion-icon> Paleo</li>
+                        <li> <ion-icon name="checkmark-outline"></ion-icon> Low FODMAP</li>
+                        <li> <ion-icon name="checkmark-outline"></ion-icon> Kid-friendly</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#heroSec" class="all-recps">See all recipes →</a>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
 
 </html>
