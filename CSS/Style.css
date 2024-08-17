@@ -408,9 +408,9 @@
 
             .meals {
                 display: flex;
-                /* gap: 32px; */
-                justify-content: space-between;
+                justify-content: center;
                 flex-wrap: wrap;
+                gap: 3rem;
             }
 
             .meal-card {
