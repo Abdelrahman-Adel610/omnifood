@@ -4,6 +4,10 @@
                 box-sizing: border-box;
             }
 
+            html {
+                scroll-behavior: smooth;
+            }
+
             :root {
                 --main-Clr: #CF711F;
                 --main-Clr-dark: #A7540D;
