@@ -22,7 +22,7 @@
 
             a:active,
             a:visited {
-                border: 10px #cf711f79 solid !important;
+                border: .625rem #cf711f79 solid !important;
             }
 
             button {
@@ -497,13 +497,99 @@
 
             a.all-recps {
                 color: var(--main-Clr);
-                font-size: 18px;
-                padding-bottom: 2px;
-                border-bottom: 1px solid var(--main-Clr);
+                font-size: 1.125rem;
+                padding-bottom: .125rem;
+                border-bottom: .0625rem solid var(--main-Clr);
                 transition: all 0.2s;
-                margin-block: 48px 98px;
+                margin-block: 3rem 6.125rem;
             }
 
             a.all-recps:hover {
-                border-bottom-width: 0px;
+                border-bottom-width: 0;
+            }
+
+            /*********TestimonialsSection*********/
+
+            #testimonials {
+                padding: 3rem;
+                background-color: #FDF2E9;
+                overflow: hidden;
+            }
+
+            #testimonials header h2 {
+                text-transform: uppercase;
+                font-size: 1rem;
+                color: var(--main-Clr);
+                font-weight: 600;
+                margin: 2rem 0 1rem 0;
+            }
+
+            #testimonials header p {
+
+                color: var(--fnt-clr-headers);
+                font-weight: 700;
+                font-size: 2.75rem;
+                margin-bottom: 4rem;
+            }
+
+            .body {
+                width: 45%;
+            }
+
+            .cards {
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem 3rem;
+            }
+
+            #testimonials .card img {
+                border-radius: 50%;
+                height: 3.875rem;
+                width: 3.875rem;
+                margin-bottom: .75rem;
+            }
+
+            #testimonials .card p {
+                line-height: 1.7;
+                font-size: 1.125rem;
+            }
+
+            #testimonials .gallery {
+                width: 45%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: .625rem;
+
+            }
+
+            #testimonials .gallery picture {
+                width: 100%;
+                overflow: hidden;
+            }
+
+            #testimonials .container {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 80rem;
+
+            }
+
+            #testimonials .gallery img {
+                width: 100%;
+                transition: all 0.5s;
+            }
+
+            #testimonials .gallery img:hover {
+                transform: scale(1.3);
+            }
+
+            #testimonials span {
+                display: block;
+                margin-top: .875rem;
+                opacity: 0.8;
+
             }
