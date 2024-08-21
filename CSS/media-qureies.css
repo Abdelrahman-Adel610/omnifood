@@ -13,6 +13,7 @@
         html {
             font-size: 90%
         }
+
         #testimonials .gallery {
 
             grid-template-columns: 1fr 1fr;
@@ -31,6 +32,11 @@
 
         main {
             height: auto;
+        }
+
+        #heroSec {
+            flex-direction: column;
+            align-items: center;
         }
 
         .heroSec {
@@ -95,6 +101,29 @@
             font-size: 1.875rem;
         }
 
+        #testimonials {
+            padding-inline: 2.5rem;
+        }
+
+        #testimonials .container {
+
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+
+        #testimonials .gallery {
+            width: 100%;
+            display: grid;
+            gap: .625rem;
+            justify-content: center;
+            align-content: center;
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        .body {
+            width: 100%;
+        }
+
     }
 
     @media only screen and (max-width:37.5em) {
@@ -115,5 +144,20 @@
 
 
             font-size: 1.5rem;
+        }
+
+
+        .cards {
+
+            grid-template-columns: 1fr;
+            gap: 2rem 3rem;
+        }
+
+        .meal-card {
+            width: 100%
+        }
+
+        #testimonials .gallery {
+            grid-template-columns: repeat(4, 1fr);
         }
     }
