@@ -124,6 +124,14 @@
             width: 100%;
         }
 
+        .feature-cards {
+            display: grid;
+            justify-content: center;
+            /* justify-items: center; */
+            grid-template-columns: repeat(2, minmax(19rem, 25rem));
+            gap: 2rem 5rem;
+        }
+
     }
 
     @media only screen and (max-width:37.5em) {
@@ -159,5 +167,14 @@
 
         #testimonials .gallery {
             grid-template-columns: repeat(4, 1fr);
+        }
+
+        .pricing-cards {
+            flex-direction: column;
+        }
+
+        .feature-cards {
+            display: flex;
+            flex-direction: column;
         }
     }

@@ -149,8 +149,9 @@
                 height: 50%;
             }
 
-            .open .try-but {
+            .try-but {
                 font-size: 1.5rem;
+                color: #fff;
             }
 
             .open .x-but {
@@ -295,6 +296,27 @@
                 max-width: 59.375rem;
                 margin-inline: auto;
                 margin-bottom: 4rem;
+            }
+
+
+            /* header {
+                width: 100%;
+                background-color: #A7540D;
+            } */
+
+            header h2 {
+                text-transform: uppercase;
+                font-size: 1rem;
+                color: var(--main-Clr);
+                font-weight: 600;
+                margin: 2rem 0 1rem 0;
+            }
+
+            header p {
+
+                color: var(--fnt-clr-headers);
+                font-weight: 700;
+                font-size: 2.75rem;
             }
 
             /*********How it works Section*********/
@@ -596,4 +618,109 @@
                 margin-top: .875rem;
                 opacity: 0.8;
 
+            }
+
+            /*********Testing*********/
+            #pricing {
+                padding: 3rem;
+            }
+
+            .pricing-cards {
+                margin-top: 6rem;
+                display: flex;
+                justify-content: center;
+                gap: 4rem;
+            }
+
+            #pricing .card {
+                text-align: center;
+                padding: 1rem 4rem;
+                box-shadow: 0 0 .125rem .125rem #FDF2E9;
+                border-radius: .625rem;
+                margin-bottom: 3rem;
+            }
+
+            #pricing .card header p {
+                font-size: 3.875rem;
+                margin-bottom: .5rem;
+            }
+
+            #pricing .card header p::before {
+                content: '$';
+                font-weight: 500;
+                font-size: 1.875rem;
+            }
+
+            #pricing .card header+p {
+                font-size: 1rem;
+                opacity: 0.7;
+                margin-bottom: 3rem;
+            }
+
+            #pricing ul {
+                font-size: 1.125rem;
+                font-weight: 400;
+                margin-bottom: 4rem;
+
+            }
+
+            #pricing ul li i {
+                color: #cf711fe4;
+                font-size: 1.5rem;
+            }
+
+            #pricing button {
+                margin-bottom: 2rem;
+            }
+
+            #pricing .special {
+                position: relative;
+                background-color: #FDF2E9;
+                overflow: hidden;
+            }
+
+            #pricing .special::after {
+                content: 'BEST VALUE';
+                padding: .25rem 2rem;
+                font-weight: 700;
+                font-size: .875rem;
+                position: absolute;
+                top: 6%;
+                right: -7.5%;
+                background-color: #FFD43B;
+                transform: rotate(45deg);
+            }
+
+            #pricing .features>p {
+                text-align: center;
+                margin-bottom: 5rem;
+            }
+
+            .feature-cards {
+                display: flex;
+                gap: 3rem;
+            }
+
+            .feature-card {
+                padding-block: 1rem;
+            }
+
+            .feature-card i {
+                font-size: 1.875rem;
+                opacity: .95;
+                margin-bottom: 1.5rem;
+                padding: 1.25rem;
+                border-radius: 50%;
+                color: var(--main-Clr);
+                background-color: #FDF2E9;
+            }
+
+            .feature-card h2 {
+                margin-bottom: 1.5rem;
+                color: var(--fnt-clr-headers);
+            }
+
+            .feature-card p {
+                font-size: 1.125rem;
+                line-height: 1.9;
             }
