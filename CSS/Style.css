@@ -69,6 +69,12 @@
 
             /******* navbar Section classes *******/
 
+            nav .links a,
+            nav .logo,
+            nav button {
+                transition: all 0.3s;
+            }
+
             nav {
                 background-color: rgba(255, 255, 255, 0.9);
                 z-index: 9999;
@@ -87,6 +93,7 @@
             }
 
             .links {
+
                 width: 45%;
                 display: flex;
                 justify-content: space-between;
@@ -96,19 +103,26 @@
 
             a:link,
             a :visited {
+
                 color: var(--fnt-clr-headers);
                 font-weight: 500;
             }
 
             a:hover,
             a:active {
+
                 color: var(--main-Clr);
             }
 
             .links button {
+                padding: 0;
+            }
+
+            .links button a {
                 color: white;
                 font-size: 1rem;
                 font-weight: 700;
+                margin: 12px 24px;
             }
 
             .x-but {
@@ -723,4 +737,57 @@
             .feature-card p {
                 font-size: 1.125rem;
                 line-height: 1.9;
+            }
+
+            #getInContact {
+                padding: 3rem;
+                /* height: 1000px; */
+            }
+
+            .getMeal {
+                background-color: #EA964A;
+                display: flex;
+                border-radius: 20px;
+            }
+
+            .form {
+                padding: 32px 48px;
+            }
+
+            .form header p {
+                margin-bottom: 32px;
+            }
+
+            form {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            form input,
+            form select {
+                background-color: #fff;
+                border: 0px;
+                padding: 14px 16px;
+                border-radius: 8px;
+            }
+
+            form label {
+                display: block;
+            }
+
+            .getMeal picture {
+
+                width: 600px;
+                height: 500px;
+                /* height: 500px; */
+
+                background-image: linear-gradient(to right bottom,
+                        rgba(235, 151, 78, 0.35),
+                        rgba(230, 125, 34, 0.35)),
+                    url("../Images/eating.jpg");
+                background-size: cover;
+                background-position: center center;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+
             }
