@@ -38,6 +38,11 @@
                 cursor: pointer;
             }
 
+            button:focus {
+                box-shadow: 0 0 0 8px #cf711f90;
+
+            }
+
             img {
                 width: 100%;
                 /* overflow-clip-margin: content-box; */
@@ -69,6 +74,12 @@
 
             /******* navbar Section classes *******/
 
+            nav .links a,
+            nav .logo,
+            nav button {
+                transition: all 0.3s;
+            }
+
             nav {
                 background-color: rgba(255, 255, 255, 0.9);
                 z-index: 9999;
@@ -87,6 +98,7 @@
             }
 
             .links {
+
                 width: 45%;
                 display: flex;
                 justify-content: space-between;
@@ -96,19 +108,26 @@
 
             a:link,
             a :visited {
+
                 color: var(--fnt-clr-headers);
                 font-weight: 500;
             }
 
             a:hover,
             a:active {
+
                 color: var(--main-Clr);
             }
 
             .links button {
+                padding: 0;
+            }
+
+            .links button a {
                 color: white;
                 font-size: 1rem;
                 font-weight: 700;
+                margin: 12px 24px;
             }
 
             .x-but {
@@ -723,4 +742,106 @@
             .feature-card p {
                 font-size: 1.125rem;
                 line-height: 1.9;
+            }
+
+            #getInContact {
+                padding: 3rem;
+
+            }
+
+            #getInContact:focus {
+                box-shadow: 0 0 0 .5rem #cf711f90;
+
+
+            }
+
+            .getMeal {
+                background-color: #EA964A;
+                display: flex;
+                border-radius: 1.25rem;
+            }
+
+            .form {
+                padding: 2rem 3rem;
+                color: var(--fnt-clr-headers);
+            }
+
+            .form header p {
+                margin-bottom: 2rem;
+            }
+
+            form {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                row-gap: 2rem;
+                column-gap: 2rem;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .form header+p {
+                font-size: 1.125rem;
+                line-height: 1.8;
+                margin-bottom: 2rem;
+            }
+
+            form input,
+            form select {
+                background-color: #fff;
+                border: 0rem;
+                padding: .875rem 1rem;
+                border-radius: .5rem;
+                width: 100%;
+                font-size: 1.25rem;
+                height: 3rem;
+
+
+            }
+
+            form div {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            form label {
+                display: block;
+                color: var(--fnt-clr-headers);
+                font-weight: 600;
+            }
+
+            .getMeal picture {
+
+                width: 37.5rem;
+                height: 31.25rem;
+
+                background-image: linear-gradient(to right bottom,
+                        rgba(235, 151, 78, 0.35),
+                        rgba(230, 125, 34, 0.35)),
+                    url("../Images/eating.jpg");
+                background-size: cover;
+                background-position: center center;
+                border-top-right-radius: 1.25rem;
+                border-bottom-right-radius: 1.25rem;
+
+            }
+
+            .sign-up {
+                align-self: flex-end;
+                height: 3rem;
+                color: white;
+                font-size: 1.25rem;
+                font-weight: 600;
+            }
+
+            input::-webkit-input-placeholder {
+                opacity: 0.5;
+            }
+
+            input:focus,
+            select:focus {
+                outline: none;
+                box-shadow: 0rem 0rem 0rem .5rem rgba(255, 241, 241, 0.458);
+
             }

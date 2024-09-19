@@ -132,6 +132,14 @@
             gap: 2rem 5rem;
         }
 
+        form {
+            grid-template-columns: 1fr;
+        }
+
+        .getMeal picture {
+            width: 59rem;
+            height: 45rem;
+        }
     }
 
     @media only screen and (max-width:37.5em) {
@@ -176,5 +184,16 @@
         .feature-cards {
             display: flex;
             flex-direction: column;
+        }
+
+        .getMeal {
+            flex-direction: column;
+        }
+
+        .getMeal picture {
+            order: -1;
+            width: 100%;
+            height: 20rem;
+            border-radius: 1.25rem 1.25rem 0rem 0rem;
         }
     }
