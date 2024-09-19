@@ -39,7 +39,7 @@
             }
 
             button:focus {
-                box-shadow: 0 0 0 8px #cf711f90;
+                box-shadow: 0 0 0 .5rem #cf711f90;
 
             }
 
@@ -127,7 +127,7 @@
                 color: white;
                 font-size: 1rem;
                 font-weight: 700;
-                margin: 12px 24px;
+                margin: .75rem 1.5rem;
             }
 
             .x-but {
@@ -759,6 +759,7 @@
                 background-color: #EA964A;
                 display: flex;
                 border-radius: 1.25rem;
+                margin-bottom: 5rem;
             }
 
             .form {
@@ -844,4 +845,68 @@
                 outline: none;
                 box-shadow: 0rem 0rem 0rem .5rem rgba(255, 241, 241, 0.458);
 
+            }
+
+            #footer {
+                border-top: .0313rem solid rgba(0, 0, 0, 0.076);
+                padding: 3rem;
+
+            }
+
+            #footer>div {
+                margin-block: 4rem;
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                column-gap: 1.875rem;
+            }
+
+            .col img {
+                width: 10rem;
+                margin-bottom: 2rem;
+            }
+
+            .col {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                color: #767678;
+                justify-content: space-between;
+            }
+
+            .col header p {
+                font-size: 1.125rem;
+                color: #555555;
+                font-weight: 500;
+            }
+
+            .col .icons {
+                display: flex;
+                gap: 1.875rem;
+                font-size: 1.5rem;
+            }
+
+            .col .icons i {
+                transition: all 0.3s;
+                cursor: pointer;
+            }
+
+            .col .icons i:hover {
+                color: #303030;
+            }
+
+            .col ul li {
+                cursor: pointer;
+                transition: all 0.3s;
+            }
+
+            .col ul li:hover {
+                color: var(--fnt-clr-headers);
+            }
+
+            .small {
+                font-size: .875rem;
+            }
+
+            .col p {
+                line-height: 1.8;
             }
